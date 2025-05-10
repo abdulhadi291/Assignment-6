@@ -51,14 +51,31 @@
 
 //question 4
 
-void main() {
-  int number = -7;
+// void main() {
+//   int number = -7;
 
-  if (number > 0) {
-    print("The number is positive.");
-  } else if (number < 0) {
-    print("The number is negative.");
-  } else {
-    print("The number is zero.");
+//   if (number > 0) {
+//     print("The number is positive.");
+//   } else if (number < 0) {
+//     print("The number is negative.");
+//   } else {
+//     print("The number is zero.");
+//   }
+// }
+
+//---------------------------------------------------------------------------------
+
+//Question 5
+
+void main() {
+  int number = 5;
+  int factorial = 1;
+  int i = 1;
+
+  while (i <= number) {
+    factorial = factorial * i;
+    i++;
   }
+
+  print("Factorial of $number is: $factorial");
 }
