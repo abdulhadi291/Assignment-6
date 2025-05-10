@@ -84,12 +84,21 @@
 
 // Question 6
 
-void main() {
-  int number = 10;
+// void main() {
+//   int number = 10;
 
-  while (number >= 1) {
-    print(number);
-    number--;
-  }
-}
+//   while (number >= 1) {
+//     print(number);
+//     number--;
+//   }
+// }
 //-------------------------------------------------------------------------------------
+
+void main() {
+  int i = 1;
+
+  do {
+    print("Square of $i is ${i * i}");
+    i++;
+  } while (i <= 5);
+}
