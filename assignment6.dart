@@ -94,11 +94,32 @@
 // }
 //-------------------------------------------------------------------------------------
 
+//Question 7
+
+// void main() {
+//   int i = 1;
+
+//   do {
+//     print("Square of $i is ${i * i}");
+//     i++;
+//   } while (i <= 5);
+// }
+
+//--------------------------------------------------------------------------------------
+
+//Question 8
+
 void main() {
-  int i = 1;
+  int number = 672839;
+  int largestDigit = 0;
 
   do {
-    print("Square of $i is ${i * i}");
-    i++;
-  } while (i <= 5);
+    int digit = number % 10;
+    if (digit > largestDigit) {
+      largestDigit = digit;
+    }
+    number = number ~/ 10;
+  } while (number > 0);
+
+  print("The largest digit is: $largestDigit");
 }
