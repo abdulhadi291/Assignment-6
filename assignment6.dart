@@ -19,12 +19,30 @@
 //-------------------------------------------------------------------------------------
 
 //Question 2
-void main() {
-  int number = 5;
-  int i = 1;
+// void main() {
+//   int number = 5;
+//   int i = 1;
 
-  while (i <= 10) {
-    print("$number x $i = ${number * i}");
+//   while (i <= 10) {
+//     print("$number x $i = ${number * i}");
+//     i++;
+//   }
+// }
+
+//-----------------------------------------------------------------------------------
+
+//Question 3
+
+void main() {
+  int i = 1;
+  int sum = 0;
+
+  do {
+    if (i % 2 != 0) {
+      sum = sum + i;
+    }
     i++;
-  }
+  } while (i <= 50);
+
+  print("Sum of odd numbers from 1 to 50 is: $sum");
 }
