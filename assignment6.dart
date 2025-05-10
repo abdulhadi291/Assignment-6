@@ -109,17 +109,32 @@
 
 //Question 8
 
+// void main() {
+//   int number = 672839;
+//   int largestDigit = 0;
+
+//   do {
+//     int digit = number % 10;
+//     if (digit > largestDigit) {
+//       largestDigit = digit;
+//     }
+//     number = number ~/ 10;
+//   } while (number > 0);
+
+//   print("The largest digit is: $largestDigit");
+// }
+
+//-------------------------------------------------------------------------------------
+
+//Question 9
+
 void main() {
-  int number = 672839;
-  int largestDigit = 0;
+  int number = 1;
 
   do {
-    int digit = number % 10;
-    if (digit > largestDigit) {
-      largestDigit = digit;
+    if (number % 2 == 0) {
+      print(number);
     }
-    number = number ~/ 10;
-  } while (number > 0);
-
-  print("The largest digit is: $largestDigit");
+    number++;
+  } while (number <= 20);
 }
