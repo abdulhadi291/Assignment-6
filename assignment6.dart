@@ -67,15 +67,29 @@
 
 //Question 5
 
+// void main() {
+//   int number = 5;
+//   int factorial = 1;
+//   int i = 1;
+
+//   while (i <= number) {
+//     factorial = factorial * i;
+//     i++;
+//   }
+
+//   print("Factorial of $number is: $factorial");
+// }
+
+//-------------------------------------------------------------------------------------
+
+// Question 6
+
 void main() {
-  int number = 5;
-  int factorial = 1;
-  int i = 1;
+  int number = 10;
 
-  while (i <= number) {
-    factorial = factorial * i;
-    i++;
+  while (number >= 1) {
+    print(number);
+    number--;
   }
-
-  print("Factorial of $number is: $factorial");
 }
+//-------------------------------------------------------------------------------------
