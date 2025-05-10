@@ -128,13 +128,25 @@
 
 //Question 9
 
-void main() {
-  int number = 1;
+// void main() {
+//   int number = 1;
 
-  do {
-    if (number % 2 == 0) {
-      print(number);
-    }
-    number++;
-  } while (number <= 20);
+//   do {
+//     if (number % 2 == 0) {
+//       print(number);
+//     }
+//     number++;
+//   } while (number <= 20);
+// }
+
+//-------------------------------------------------------------------------------------
+
+void main() {
+  int number = 5;
+
+  print("Multiplication table of $number:");
+
+  for (int i = 1; i <= 10; i++) {
+    print("$number x $i = ${number * i}");
+  }
 }
