@@ -141,12 +141,36 @@
 
 //-------------------------------------------------------------------------------------
 
+//Question 10
+
+// void main() {
+//   int number = 5;
+
+//   print("Multiplication table of $number:");
+
+//   for (int i = 1; i <= 10; i++) {
+//     print("$number x $i = ${number * i}");
+//   }
+// }
+
+// -------------------------------------------------------------------------------------
+
+//Question 11
+
+import 'dart:io';
+
 void main() {
-  int number = 5;
+  String string1;
 
-  print("Multiplication table of $number:");
+  print("Enter the string");
+  string1 = stdin.readLineSync()!;
 
-  for (int i = 1; i <= 10; i++) {
-    print("$number x $i = ${number * i}");
+  String reversedstring = string1.split('').reversed.join();
+  print("Reversed string is: $reversedstring");
+
+  if (string1 == reversedstring) {
+    print("the given string : $string1 is palindrome");
+  } else {
+    print("the given string : $string1 is not palindrome");
   }
 }
