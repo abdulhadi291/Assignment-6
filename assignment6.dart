@@ -33,16 +33,32 @@
 
 //Question 3
 
+// void main() {
+//   int i = 1;
+//   int sum = 0;
+
+//   do {
+//     if (i % 2 != 0) {
+//       sum = sum + i;
+//     }
+//     i++;
+//   } while (i <= 50);
+
+//   print("Sum of odd numbers from 1 to 50 is: $sum");
+// }
+
+//-----------------------------------------------------------------------------------
+
+//question 4
+
 void main() {
-  int i = 1;
-  int sum = 0;
+  int number = -7;
 
-  do {
-    if (i % 2 != 0) {
-      sum = sum + i;
-    }
-    i++;
-  } while (i <= 50);
-
-  print("Sum of odd numbers from 1 to 50 is: $sum");
+  if (number > 0) {
+    print("The number is positive.");
+  } else if (number < 0) {
+    print("The number is negative.");
+  } else {
+    print("The number is zero.");
+  }
 }
